@@ -1,5 +1,6 @@
 ﻿using System;
-
+//Code by Clarence Kieth M. Dela Cruz
+//BSCPE 1-1
 namespace ConversionMethod
 {
     internal class Program
@@ -21,7 +22,7 @@ namespace ConversionMethod
                 double Output;
                 Output = UserNum / min;
 
-                Console.WriteLine(UserNum + " second/s in minute/s is " + Output + " minute/s" );
+                Console.WriteLine(UserNum + " second/s in minute/s is: " + Output + " minute/s" );
             }
             else
             {
@@ -34,7 +35,7 @@ namespace ConversionMethod
                     double Output;
                     Output = UserNum / hour;
 
-                    Console.WriteLine(UserNum + " minute/s in hour/s is " + Output + " hour/s");
+                    Console.WriteLine(UserNum + " minute/s in hour/s is: " + Output + " hour/s");
                 }
                 else
                 {
@@ -47,7 +48,7 @@ namespace ConversionMethod
                         double Output;
                         Output = UserNum / days;
 
-                        Console.WriteLine(UserNum + " hour/s in day/s is " + Output + " day/s");
+                        Console.WriteLine(UserNum + " hour/s in day/s is: " + Output + " day/s");
                     }
                     else
                     {
@@ -60,7 +61,7 @@ namespace ConversionMethod
                             double Output;
                             Output = UserNum / months;
 
-                            Console.WriteLine(UserNum + " day/s in month/s is " + Output + " months/s");
+                            Console.WriteLine(UserNum + " day/s in month/s is: " + Output + " months/s");
                         }
                         else
                         {
