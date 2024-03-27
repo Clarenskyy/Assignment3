@@ -15,9 +15,10 @@ namespace ConversionMethod
                 "\n3. h-d (hour to days) " +
                 "\n4. d-mths (days to months)" +
                 "\nSelect (1-4): ");
-            String UserInput = Console.ReadLine();
+            string UserInput = Console.ReadLine();
 
-
+            while (true)
+            {
                 if (UserInput == "1")
                 {
                     Console.Write("Enter the second/s to convert: ");
@@ -27,9 +28,16 @@ namespace ConversionMethod
                     int output2;
                     Output = UserNum / min;
                     output2 = UserNum % min;
-                
+
 
                     Console.WriteLine(UserNum + " second/s in minute/s is: " + Output + " minute/s and " + output2 + " second/s");
+                    Console.WriteLine("\n do you want to convert again? (y/n)");
+                    string choices = Console.ReadLine();
+                    if (choices != "y")
+                    {
+                        break;
+                    }
+
                 }
                 else
                 {
@@ -42,8 +50,15 @@ namespace ConversionMethod
                         int Output;
                         int output2;
                         Output = UserNum / hour;
-                        output2 = UserNum % hour; 
-                    Console.WriteLine(UserNum + " minute/s in hour/s is: " + Output + " hour/s and " + output2 + " minute/s");
+                        output2 = UserNum % hour;
+                        Console.WriteLine(UserNum + " minute/s in hour/s is: " + Output + " hour/s and " + output2 + " minute/s");
+                        Console.WriteLine("\n do you want to convert again? (y/n)");
+                        string choices = Console.ReadLine();
+                        if (choices != "y")
+                        {
+                            break;
+                        }
+
                     }
                     else
                     {
@@ -56,9 +71,16 @@ namespace ConversionMethod
                             int Output;
                             int output2;
                             Output = UserNum / days;
-                            output2 = UserNum % days;   
+                            output2 = UserNum % days;
 
                             Console.WriteLine(UserNum + " hour/s in day/s is: " + Output + " day/s and " + output2 + " hour/s");
+                            Console.WriteLine("\n do you want to convert again? (y/n)");
+                            string choices = Console.ReadLine();
+                            if (choices != "y")
+                            {
+                                break;
+                            }
+
                         }
                         else
                         {
@@ -74,16 +96,25 @@ namespace ConversionMethod
                                 Output = UserNum / months;
 
                                 Console.WriteLine(UserNum + " day/s in month/s is : " + Output + " months/s and " + Output2 + " day/s");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Hold on there! Seems like your finger slipped.Try picking a number between 1 and 4.");
-                                
-                                return;
+
+                                Console.WriteLine("\n do you want to convert again? (y/n)");
+                                string choices = Console.ReadLine();
+                                if (choices != "y")
+                                {
+                                    break;
+                                }
+
+                            }
+                            else
+                            {
+                                Console.WriteLine("Hold on there! Seems like your finger slipped.Try picking a number between 1 and 4.");
+
                             }
                         }
                     }
+
                 }
             }
         }
     }
+}
