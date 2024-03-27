@@ -8,7 +8,7 @@ namespace ConversionMethod
         static void Main(string[] args)
         {
             Console.Write("Select Option of Conversion (1-4);" +
-                "\n1. s-m (seconds - minutes) " +
+                "\n1. s-m (seconds to minutes) " +
                 "\n2. m-h (minutes to hour) " +
                 "\n3. h-d (hour to days) " +
                 "\n4. d-mths (days to months)" +
@@ -71,7 +71,7 @@ namespace ConversionMethod
                                 Output2 = UserNum % months;
                                 Output = UserNum / months;
 
-                                Console.WriteLine(UserNum + " day/s in month/s is: " + Output + " months/s and " + Output2 + " day/s");
+                                Console.WriteLine(UserNum + " day/s in month/s is : " + Output + " months/s and " + Output2 + " day/s");
                                 
                             }
                             else
