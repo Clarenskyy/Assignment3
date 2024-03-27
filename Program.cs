@@ -25,6 +25,7 @@ namespace ConversionMethod
                     int output2;
                     Output = UserNum / min;
                     output2 = UserNum % min;
+                
 
                     Console.WriteLine(UserNum + " second/s in minute/s is: " + Output + " minute/s and " + output2 + " second/s");
                 }
@@ -37,7 +38,6 @@ namespace ConversionMethod
                         int UserNum = Convert.ToInt32(Console.ReadLine());
                         int hour = 60;
                         int Output;
-                        Output = UserNum / hour;
                         int output2;
                         Output = UserNum / hour;
                         output2 = UserNum % hour; 
