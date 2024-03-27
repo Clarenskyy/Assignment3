@@ -1,4 +1,6 @@
 ﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Reflection;
 //Code by Clarence Kieth M. Dela Cruz
 //BSCPE 1-1
 namespace ConversionMethod
@@ -72,11 +74,11 @@ namespace ConversionMethod
                                 Output = UserNum / months;
 
                                 Console.WriteLine(UserNum + " day/s in month/s is : " + Output + " months/s and " + Output2 + " day/s");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Hold on there! Seems like your finger slipped.Try picking a number between 1 and 4.");
                                 
-                            }
-                            else
-                            {
-                                Console.WriteLine("Invalid Option, input ONLY 1-4.");
                                 return;
                             }
                         }
