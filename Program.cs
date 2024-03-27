@@ -56,7 +56,7 @@ namespace ConversionMethod
                             Output = UserNum / days;
                             output2 = UserNum % days;   
 
-                            Console.WriteLine(UserNum + " hour/s in day/s is approximately: " + Output + " day/s and " + output2 + " hour/s");
+                            Console.WriteLine(UserNum + " hour/s in day/s is: " + Output + " day/s and " + output2 + " hour/s");
                         }
                         else
                         {
@@ -71,7 +71,7 @@ namespace ConversionMethod
                                 Output2 = UserNum % months;
                                 Output = UserNum / months;
 
-                                Console.WriteLine(UserNum + " day/s in month/s is approximately: " + Output + " months/s and " + Output2 + " day/s");
+                                Console.WriteLine(UserNum + " day/s in month/s is: " + Output + " months/s and " + Output2 + " day/s");
                                 
                             }
                             else
